@@ -1,0 +1,19 @@
+{
+    "header": {
+        "title": "Chris Productions",
+        "home": "Home",
+        "music": "Music",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "footer": {
+        "languagebtn": "Language",
+        "copyright": "© 2026 Chris Productions. All rights reserved."
+    },
+    "home": {
+        "sampledescription": "Listen to this sample",
+        "music": "Listen all my works",
+        "description": "Welcome to Chris Productions!",
+        "descriptionextended": "I'm Chris, a passionate musician and producer dedicated to creating captivating soundscapes and memorable melodies. Explore my music, learn about my journey, and get in touch for collaborations or bookings."
+    }
+}
