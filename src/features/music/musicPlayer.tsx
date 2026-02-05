@@ -239,10 +239,10 @@ export const MusicPlayer = () => {
         />
       </div>
       <div className="flex items-center p-5 justify-center gap-6 w-full">
-        <button className="bg-gray-700 rounded-full p-1 ring-2 ring-gray-600 hover:bg-gray-800">
+        <button className="bg-gray-700 rounded-full p-1 ring-2 ring-gray-600 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
           <Repeat />
         </button>
-        <button className="bg-gray-700 rounded-full p-1 ring-2 ring-gray-600 hover:bg-gray-800">
+        <button className="bg-gray-700 rounded-full p-1 ring-2 ring-gray-600 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
           <SkipBack />
         </button>
         <button 
@@ -251,10 +251,10 @@ export const MusicPlayer = () => {
         >
           {isPlaying ? <Pause /> : <Play />}
         </button>
-        <button className="bg-gray-700 rounded-full p-1 ring-2 ring-gray-600 hover:bg-gray-800">
+        <button className="bg-gray-700 rounded-full p-1 ring-2 ring-gray-600 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
           <SkipForward />
         </button>
-        <button className="bg-gray-700 rounded-full p-1 ring-2 ring-gray-600 hover:bg-gray-800">
+        <button className="bg-gray-700 rounded-full p-1 ring-2 ring-gray-600 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
           <Shuffle />
         </button>
       </div>
