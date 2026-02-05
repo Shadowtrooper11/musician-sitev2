@@ -43,9 +43,9 @@ export default function Home() {
                                 <button
                                     onClick={() => playTrack({
                                         id: '1',
-                                        title: 'Light of the Lost',
+                                        title: 'Radiant Charge',
                                         artist: 'Chris Productions',
-                                        audioUrl: 'https://pub-02e77316cbe24c94aa351b188394e94d.r2.dev/Light%20of%20the%20Lost.mp3',
+                                        audioUrl: 'https://pub-02e77316cbe24c94aa351b188394e94d.r2.dev/Chase%20LOTL(1).mp3',
                                         coverUrl: '/sample.jpg',
                                     })} 
                                     className={cn("rounded-full p-2 bg-blue-500 border border-blue-700 hover:bg-blue-600 mt-2")}>
