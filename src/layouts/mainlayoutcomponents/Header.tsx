@@ -25,7 +25,7 @@ export default function Header() {
     ]
     
     return (
-        <header className={cn("p-2 h-20 sticky top-0 z-50 shadow-lg bg-neutral-900 border-b border-neutral-700")}>
+        <header className={cn("p-2 h-20 sticky top-0 z-50 shadow-lg bg-gray-800/95 border-b border-neutral-700/95 backdrop-blur-sm")}>
             <nav className={cn("mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center")}>
                 <div className="flex items-center justify-between gap-3">
                     {/* Logo and Name */}

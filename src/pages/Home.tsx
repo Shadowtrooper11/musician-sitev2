@@ -3,9 +3,11 @@ import { useTranslation } from "react-i18next";
 import  { Link } from 'react-router-dom';
 import { GradientSpinnerA } from "@/components/ui/GradientSpinnerA";
 import { ArrowRight, Play, Music } from "lucide-react";
+import { usePlayerStore } from '@/features/music/hooks/usePlayStore';
 
 export default function Home() {
     const { t } = useTranslation();
+    const playTrack = usePlayerStore(state => state.playTrack);
 
     return (
         <div className="flex flex-col items-center justify-center mt-8">
@@ -19,7 +21,7 @@ export default function Home() {
                         className={cn("size-52 relative rounded-full object-cover")}
                     />
                 </div>
-                <p className="text-white text-lg font-semibold bg-gray-800/90 border-1 border-white/15 p-4 rounded-lg max-w-lg">
+                <p className="text-white text-lg bg-gray-800/90 border-1 border-white/15 p-4 rounded-lg max-w-lg">
                     {t('home.description')}
                     <br />
                     {t('home.descriptionextended')}
@@ -38,7 +40,15 @@ export default function Home() {
                                 <h3 className="text-white text-center font-semibold">
                                     {t('home.sampledescription')}
                                 </h3>
-                                <button className={cn("rounded-full p-2 bg-blue-500 border border-blue-700 hover:bg-blue-600 mt-2")}>
+                                <button
+                                    onClick={() => playTrack({
+                                        id: '1',
+                                        title: 'Light of the Lost',
+                                        artist: 'Chris Productions',
+                                        audioUrl: 'https://pub-02e77316cbe24c94aa351b188394e94d.r2.dev/Light%20of%20the%20Lost.mp3',
+                                        coverUrl: '/sample.jpg',
+                                    })} 
+                                    className={cn("rounded-full p-2 bg-blue-500 border border-blue-700 hover:bg-blue-600 mt-2")}>
                                     <Play className="text-white" />
                                 </button>
                             </div>

@@ -1,10 +1,12 @@
 import { Outlet } from 'react-router-dom';
 import Header from './mainlayoutcomponents/Header';
 import Footer from './mainlayoutcomponents/Footer';
+import { MusicPlayer } from '@/features/music/musicPlayer';
 
 export default function MainLayout() {
     return (
-        <div className="text-gray-200 bg-[url(/chrisbg.jpg)] bg-cover bg-center">
+        <div className="text-gray-200 bg-[url(/chrisbg.jpg)] bg-cover bg-center font-serif">
+            <MusicPlayer />
             <Header />
 
             <main className="min-h-screen p-5">
